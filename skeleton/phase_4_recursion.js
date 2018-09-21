@@ -19,3 +19,14 @@ function sumRec(arr) {
   return result;
 
 }
+
+function fib(n) {
+  if (n === 2) {
+    return [0, 1];
+  }
+
+  let result = fib(n-1);
+  result.push(result[result.length - 2]+ result[result.length - 1]);
+  return result;
+
+}
